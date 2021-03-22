@@ -1,0 +1,9 @@
+@function rem($px, $base: 16) {
+	@return $px / $base + rem;
+}
+
+@mixin tablet {
+	@media screen and (max-width: 1279px) {
+		@content;
+	}
+}
