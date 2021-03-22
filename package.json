@@ -1,7 +1,7 @@
 {
-  "name": "fronttutorial",
+  "name": "frontpuck",
   "version": "1.0.0",
-  "description": "",
+  "description": "base front pack",
   "main": "webpack.config.js",
   "scripts": {
     "dev": "webpack serve  --open --config ./webpack/webpack.dev.conf.js",
@@ -12,12 +12,18 @@
     "h:init": "husky init",
     "prepare": "husky install"
   },
+  "private": true,
   "browserslist": [
     "> 1%",
     "last 3 version"
   ],
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "webpack",
+    "husky",
+    "eslint",
+    "babel"
+  ],
+  "author": "rustam",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.13.10",
@@ -48,5 +54,9 @@
     "@babel/polyfill": "^7.12.1",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rustam99/FrontPuck"
   }
 }
