@@ -24,6 +24,9 @@ module.exports = {
 		path: PATH.dist,
 		assetModuleFilename: `[path][name][ext][query]`,
 	},
+	resolve: {
+		extensions: ['.tsx', '.ts', '.js'],
+	},
 	optimization: {
 		splitChunks: {
 			cacheGroups: {
@@ -44,6 +47,12 @@ module.exports = {
 			test: /\.js$/,
 			use: [
 				'babel-loader', 'eslint-loader',
+			],
+			exclude: '/node_modules/',
+		}, {
+			test: /\.ts$/,
+			use: [
+				'babel-loader', 'ts-loader', 'eslint-loader',
 			],
 			exclude: '/node_modules/',
 		}, {
